@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting Project</title>
+    <link rel="shortcut icon" href="ImageStorage/favicon.ico">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: cover;
+            background-color: #61ccdf;
+            background-image: url(../AcctngImages/MainBG.jpg);
+	        background-repeat: no-repeat;
+	        background-attachment: fixed;
+	        background-position: center;
+	        background-size: cover;
+        }
+
+        .AS1 {
+            margin: 9em 20% 5em 20%;
+            width: 60%;
+            height: 12em;
+            float: right;
+            background-color: white;
+            background-image: url(IM/ATC.jpg);
+            box-shadow: inset 0px 0px 5px 1px black;
+            background-size: 100% 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-image 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .AS1:hover {
+            background-image: url(IM/ATCB1.IM);
+            box-shadow: inset 0px 0px 20px 1px black;
+        }
+
+        .AS1 h1 {
+            position: absolute;
+            font-size: 2em;
+            color: black;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .AS1:hover h1 {
+            opacity: 1;
+        }
+
+        .Names1{
+            margin: 25em 0% 5em 5%;
+            width: 20%;
+            height: 2.5em;
+            box-shadow: inset 0px 0px 5px 1px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: absolute;
+            justify-content: center;
+            background-color: wheat;
+        }
+        .Names2{
+            margin: 25em 0% 5em 28%;
+            width: 20%;
+            height: 2.5em;
+            box-shadow: inset 0px 0px 5px 1px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: absolute;
+            justify-content: center;
+            background-color: wheat;
+        }
+        .Names3{
+            margin: 25em 0% 5em 52%;
+            width: 20%;
+            height: 2.5em;
+            box-shadow: inset 0px 0px 5px 1px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: absolute;
+            justify-content: center;
+            background-color: wheat;
+        }
+        .Names4{
+            margin: 25em 5% 5em 75%;
+            width: 20%;
+            height: 2.5em;
+            box-shadow: inset 0px 0px 5px 1px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: absolute;
+            justify-content: center;
+            background-color: wheat;
+        }
+
+        .TPlace {
+            margin: 2.5em 25% 5em 25%;
+            width: 50%;
+            height: 4em;
+            display: flex;
+            overflow: hidden;
+            position: absolute;
+            justify-content: center;
+            background-color: wheat;
+        }
+
+        .TPlace1 {
+            font-size: 2em;
+            margin-top: 0.5em;
+            color: black;
+            position: absolute;
+            animation-name: TTravel1;
+            animation-duration: 25s;
+            animation-iteration-count: 500;
+        }
+        .TPlace2 {
+            font-size: 2em;
+            margin-top: 0.5em;
+            color: wheat;
+            opacity: 0;
+            position: absolute;
+            animation-name: TTravel2;
+            animation-duration: 25s;
+            animation-iteration-count: 500;
+        }
+        .TPlace3 {
+            font-size: 2em;
+            margin-top: 0.5em;
+            color: wheat;
+            opacity: 0;
+            position: absolute;
+            animation-name: TTravel3;
+            animation-duration: 25s;
+            animation-iteration-count: 500;
+        }
+
+        .TPlace4 {
+            font-size: 2em;
+            margin-top: 0.5em;
+            color: wheat;
+            opacity: 0;
+            position: absolute;
+            animation-name: TTravel4;
+            animation-duration: 25s;
+            animation-iteration-count: 500;
+        }
+
+        .TPlace5 {
+            font-size: 2em;
+            margin-top: 0.5em;
+            color: wheat;
+            opacity: 0;
+            position: absolute;
+            animation-name: TTravel5;
+            animation-duration: 25s;
+            animation-iteration-count: 500;
+        }
+
+        .TPlace6 {
+            font-size: 2em;
+            margin-top: 0.5em;
+            color: wheat;
+            opacity: 0;
+            position: absolute;
+            animation-name: TTravel6;
+            animation-duration: 25s;
+            animation-iteration-count: 500;
+        }
+
+        .TPlace7 {
+            font-size: 2em;
+            margin-top: 0.5em;
+            color: wheat;
+            opacity: 0;
+            position: absolute;
+            animation-name: TTravel7;
+            animation-duration: 25s;
+            animation-iteration-count: 500;
+        }
+
+        .TPlace8 {
+            font-size: 2em;
+            margin-top: 0.5em;
+            color: wheat;
+            opacity: 0;
+            position: absolute;
+            animation-name: TTravel8;
+            animation-duration: 25s;
+            animation-iteration-count: 500;
+        }
+
+        @keyframes TTravel1 {
+            6.5% { color: black; opacity: 1; }
+            7.5% { opacity: 0; }
+            19% { opacity: 0; }
+            20% { opacity: 0; }
+            31% { opacity: 0; }
+            32% { opacity: 0; }
+            44% { opacity: 0; }
+            45% { opacity: 0; }
+            56.5% { opacity: 0; }
+            57.5% { opacity: 0; }
+            69% { opacity: 0; }
+            70% { opacity: 0; }
+            81.5% { opacity: 0; }
+            82.5% { opacity: 0; }
+            94% { opacity: 0; }
+            95% { opacity: 0; }
+            100% { color: black; opacity: 1; }
+        }
+
+        @keyframes TTravel2 {
+            6.5% { opacity: 0; }
+            7.5% { opacity: 0; }
+            19% { color: black; opacity: 1; }
+            20% { opacity: 0; }
+            31% { opacity: 0; }
+            32% { opacity: 0; }
+            44% { opacity: 0; }
+            45% { opacity: 0; }
+            56.5% { opacity: 0; }
+            57.5% { opacity: 0; }
+            69% { opacity: 0; }
+            70% { opacity: 0; }
+            81.5% { opacity: 0; }
+            82.5% { opacity: 0; }
+            94% { opacity: 0; }
+            95% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+        @keyframes TTravel3 {
+            6.5% { opacity: 0; }
+            7.5% { opacity: 0; }
+            19% { opacity: 0; }
+            20% { opacity: 0; }
+            31% { color: black; opacity: 1; }
+            32% { opacity: 0; }
+            44% { opacity: 0; }
+            45% { opacity: 0; }
+            56.5% { opacity: 0; }
+            57.5% { opacity: 0; }
+            69% { opacity: 0; }
+            70% { opacity: 0; }
+            81.5% { opacity: 0; }
+            82.5% { opacity: 0; }
+            94% { opacity: 0; }
+            95% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+        @keyframes TTravel4 {
+            6.5% { opacity: 0; }
+            7.5% { opacity: 0; }
+            19% { opacity: 0; }
+            20% { opacity: 0; }
+            31% { opacity: 0; }
+            32% { opacity: 0; }
+            44% { color: black; opacity: 1; }
+            45% { opacity: 0; }
+            56.5% { opacity: 0; }
+            57.5% { opacity: 0; }
+            69% { opacity: 0; }
+            70% { opacity: 0; }
+            81.5% { opacity: 0; }
+            82.5% { opacity: 0; }
+            94% { opacity: 0; }
+            95% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+        @keyframes TTravel5 {
+            6.5% { opacity: 0; }
+            7.5% { opacity: 0; }
+            19% { opacity: 0; }
+            20% { opacity: 0; }
+            31% { opacity: 0; }
+            32% { opacity: 0; }
+            44% { opacity: 0; }
+            45% { opacity: 0; }
+            56.5% { color: black; opacity: 1; }
+            57.5% { opacity: 0; }
+            69% { opacity: 0; }
+            70% { opacity: 0; }
+            81.5% { opacity: 0; }
+            82.5% { opacity: 0; }
+            94% { opacity: 0; }
+            95% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+        @keyframes TTravel6 {
+            6.5% { opacity: 0; }
+            7.5% { opacity: 0; }
+            19% { opacity: 0; }
+            20% { opacity: 0; }
+            31% { opacity: 0; }
+            32% { opacity: 0; }
+            44% { opacity: 0; }
+            45% { opacity: 0; }
+            56.5% { opacity: 0; }
+            57.5% { opacity: 0; }
+            69% { color: black; opacity: 1; }
+            70% { opacity: 0; }
+            81.5% { opacity: 0; }
+            82.5% { opacity: 0; }
+            94% { opacity: 0; }
+            95% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+        @keyframes TTravel7 {
+            6.5% { opacity: 0; }
+            7.5% { opacity: 0; }
+            19% { opacity: 0; }
+            20% { opacity: 0; }
+            31% { opacity: 0; }
+            32% { opacity: 0; }
+            44% { opacity: 0; }
+            45% { opacity: 0; }
+            56.5% { opacity: 0; }
+            57.5% { opacity: 0; }
+            69% { opacity: 0; }
+            70% { opacity: 0; }
+            81.5% { color: black; opacity: 1; }
+            82.5% { opacity: 0; }
+            94% { opacity: 0; }
+            95% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+        @keyframes TTravel8 {
+            6.5% { opacity: 0; }
+            7.5% { opacity: 0; }
+            19% { opacity: 0; }
+            20% { opacity: 0; }
+            31% { opacity: 0; }
+            32% { opacity: 0; }
+            44% { opacity: 0; }
+            45% { opacity: 0; }
+            56.5% { opacity: 0; }
+            57.5% { opacity: 0; }
+            69% { opacity: 0; }
+            70% { opacity: 0; }
+            81.5% { opacity: 0; }
+            82.5% { opacity: 0; }
+            94% { color: black; opacity: 1; }
+            95% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+        .prob {
+        margin: 30em 20% 5em 20%;
+        padding: 2% 3% 3% 3%;
+        width: 54%;
+        box-shadow: inset 0px 0px 5px 1px black;
+        background-color: white;
+        position: absolute;
+        overflow: hidden;
+        text-align: justify;
+        font-family: 'Arial', sans-serif;
+    }
+        .custom-button {
+        display: inline-block;
+        margin: 135em 40% 5em 40%;
+        width: 20%;
+        height: 6em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: bold;
+        box-shadow: -1px 2px 3px 6px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: #4CAF50; /* Green background color */
+        color: #ffffff; /* White text color */
+        border: 2px solid #4CAF50; /* Green border */
+        border-radius: 5px; /* Rounded corners */
+        transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }
+
+    /* 3D-like effect on hover */
+    .custom-button:hover {
+        background-color: #45a049; /* Darker green on hover */
+        border-color: #45a049; /* Darker green border on hover */
+        transform: translate(0, -3px); /* Move the button 3 pixels up on hover */
+    }
+    .custom-button:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    background-color: red;
+}
+
+    .bot{
+        position: absolute;
+        margin-top: 160em;
+        margin-bottom: 5em;
+        height: 10px;
+        background-color: bisque;
+        opacity: 0;
+    }
+    p{
+        text-align: center;
+        font-size: 1.2em;
+        text-shadow: -1px 1px 2px rgb(28 181 211 / 17%);   
+    }
+    /* Style for the table */
+#TB1 {
+  border-collapse: collapse;
+  width: 100%;
+  border: none; /* Remove border */
+  font-family: 'Arial', sans-serif; /* Specify the font-family */
+}
+
+/* Style for table cells */
+#TB1 th:nth-child(1), #TB1 td:nth-child(1) {
+  width: 15%;
+  padding-left: 40px; /* Reduce 20px of indent in Column 1 */
+  text-align: justify; /* Justify text inside Column 1 */
+  font-size: 16px; /* Specify the font size */
+}
+
+#TB1 th:nth-child(2), #TB1 td:nth-child(2) {
+  width: 85%;
+  text-align: justify; /* Justify text inside Column 2 */
+  font-size: 16px; /* Specify the font size */
+}
+
+#TB1 th, #TB1 td {
+  border: none; /* Remove cell borders */
+  padding: 8px;
+  background-color: white; /* Set background color to white */
+}
+
+/* Style for alternate row colors */
+#TB1 tr:nth-child(even) {
+  background-color: white; /* Set background color to white for even rows */
+}
+/* Style for the table */
+#TB2 {
+  border-collapse: collapse;
+  width: 100%;
+  border: none; /* Remove border */
+  font-family: 'Arial', sans-serif; /* Specify the font-family */
+}
+
+/* Style for table cells */
+#TB2 th, #TB2 td {
+  border: none; /* Remove cell borders */
+  padding: 8px; /* Set padding to default value */
+  background-color: white; /* Set background color to white */
+  text-align: left; /* Align text to the left */
+}
+
+/* Style for alternate row colors */
+#TB2 tr:nth-child(even) {
+  background-color: white; /* Set background color to white for even rows */
+}
+
+/* Style for the first column */
+#TB2 th:nth-child(1), #TB2 td:nth-child(1) {
+  width: 40%; /* Adjusted width for the first column */
+  padding-left: 40px; /* Reduce 20px of indent in Column 1 */
+  text-align: justify; /* Justify text inside Column 1 */
+  font-size: 16px; /* Specify the font size */
+}
+
+/* Style for the second column */
+#TB2 th:nth-child(2), #TB2 td:nth-child(2) {
+  width: 10%; /* Adjusted width for the second column */
+  text-align: justify; /* Justify text inside Column 2 */
+  font-size: 16px; /* Specify the font size */
+}
+    </style>
+</head>
+<body>
+    <div class="AS1">
+        <h1>Merry Christmas</h1>
+    </div>
+    <div class="TPlace">
+        <span class="TPlace1">JOURNALIZING</span>
+        <span class="TPlace2">T-ACCOUNTS</span>
+        <span class="TPlace3">TRIAL BALANCE</span>
+        <span class="TPlace4">ADJUSTING ENTRIES</span>
+        <span class="TPlace5">WORK SHEET</span>
+        <span class="TPlace6">INCOME STATEMENT</span>
+        <span class="TPlace7">CHANGING OF OE</span>
+        <span class="TPlace8">BALANCE SHEET</span>
+    </div>
+    <div class="Names1">
+        <p>Angela Postrero</p>
+    </div>
+    <div class="Names2">
+        <p>Henry Magsayo</p>
+    </div>
+    <div class="Names3">
+        <p>Princess Villanueva</p>
+    </div>
+    <div class="Names4">
+        <p>Jomari Marson</p>
+    </div>
+    <div class="prob">
+        <div>
+            Dr. Nick Marasigan, upon completing a residency program at Harvard Medical Center, established a medical practice in San Pablo, Laguna. During October 2022, the first month of operations, the following transaction occured:
+        </div><br>
+        <div>
+            <table id="TB1">
+                <tr>
+                    <td>Oct. 1</td>
+                    <td>Dr. Marasigan transferred P250,000 from his personal checking account to a bank account, Dr. Nick Marasigan, M.D.</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</td>
+                    <td>Acquired medical equipment costing P420,000 and medical supplies amounting to P39,000 by paying P59,000 cash and issuing a 24% note payable, maturing in 6 months, for the P400,000 balance.</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</td>
+                    <td>Acquired "all-in-one" insurance for a year, P20,000.</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</td>
+                    <td>Received cash from patients amounting to P117,000.</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7</td>
+                    <td>Bought medical supplies on account from San Pablo Supply, P17,000.</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10</td>
+                    <td>Paid salaries of nurses and office staff, P73,000.</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12</td>
+                    <td>Received P90,000 from the Laguna Experimental Drug Center for research to be conducted by Dr. Marasigan over the next 3 months.</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18</td>
+                    <td>Billed patients P317,000 for services rendered.</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;21</td>
+                    <td>Paid P23,000 for repairs to the medical equipment.</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23</td>
+                    <td>Paid the telephone bill, P3,000.</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24</td>
+                    <td>Bought medical equipment on account from Dr. De Leon, P45,000.</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25</td>
+                    <td>Collected P113,000 from patients billed on the 18th.</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;27</td>
+                    <td>Paid P13,000 on account to San Pablo Supply.</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30</td>
+                    <td>Withdrew P200,000 in cash from the medical practice.</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30</td>
+                    <td>Laguna Medical Association.</td>
+                </tr>
+            </table>
+        </div>        
+        <br>
+        <div>
+            1. Establish the following accounts and account numbers in a ledger.
+        </div>
+        <br>
+        <div>
+            <table id="TB2">
+                <tr>
+                    <td>Account</td>
+                    <td>No.</td>
+                    <td>Account</td>
+                    <td>No.</td>
+                </tr>
+                <tr>
+                    <td>cash</td>
+                    <td>110</td>
+                    <td>Marasigan, Capital</td>
+                    <td>310</td>
+                </tr>
+                <tr>
+                    <td>Accounts Receivable</td>
+                    <td>120</td>
+                    <td>Marasigan, Withdrawals</td>
+                    <td>320</td>
+                </tr>
+                <tr>
+                    <td>Medical Supplies</td>
+                    <td>130</td>
+                    <td>Income Summary</td>
+                    <td>330</td>
+                </tr>
+                <tr>
+                    <td>Prepaid Insurance</td>
+                    <td>140</td>
+                    <td>Medical Revenues</td>
+                    <td>410</td>
+                </tr>
+                <tr>
+                    <td>Land</td>
+                    <td>150</td>
+                    <td>Research Revenues</td>
+                    <td>420</td>
+                </tr>
+                <tr>
+                    <td>Medical Building</td>
+                    <td>160</td>
+                    <td>Salaries Expense</td>
+                    <td>510</td>
+                </tr>
+                <tr>
+                    <td>Accumulated Depreciation</td>
+                    <td></td>
+                    <td>Insurance Expense</td>
+                    <td>520</td>
+                </tr>
+                <tr>
+                    <td>Medical Building</td>
+                    <td>165</td>
+                    <td>Repair Expense</td>
+                    <td>530</td>
+                </tr>
+                <tr>
+                    <td>Medical Equipment</td>
+                    <td>170</td>
+                    <td>Supplies Expense</td>
+                    <td>540</td>
+                </tr>
+                <tr>
+                    <td>Accumulated Depreciation</td>
+                    <td></td>
+                    <td>Association Dues Expense</td>
+                    <td>550</td>
+                </tr>
+                <tr>
+                    <td>Medical Equipment</td>
+                    <td>175</td>
+                    <td>Telephone Expense</td>
+                    <td>560</td>
+                </tr>
+                <tr>
+                    <td>24% Notes Payable</td>
+                    <td>210</td>
+                    <td>Depreciation Expense-Bldg.</td>
+                    <td>570</td>
+                </tr>
+                <tr>
+                    <td>20% Notes Payable</td>
+                    <td>220</td>
+                    <td>Depreciation Expense-Equipt.</td>
+                    <td>580</td>
+                </tr>
+                <tr>
+                    <td>Accounts Payable</td>
+                    <td>230</td>
+                    <td>Interest Expense</td>
+                    <td>590</td>
+                </tr>
+                <tr>
+                    <td>Salaries Payable</td>
+                    <td>240</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Interest Payable</td>
+                    <td>250</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Unearned Research Revenues</td>
+                    <td>260</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div>
+            3. Prepare a trial balance on a worksheet and record the following adjustments on the worksheet.
+        </div><br>
+        <div style="padding-left: 3%;">
+        <div>
+            a. Insurance for one month has expired.
+        </div>
+        <div>
+            b. Medical supplies on hand at month-end amounted to P21,000.
+        </div>
+        <div>
+            c. Depreciation on the medical building and on the medical equipment is P5,000 and P9,000, respectively.
+        </div>
+        <div>
+            d. Unearned research revenues in the amount of P30,000 have been earned. e. Salaries of P51,000 have accrued.
+        </div>
+        <div>
+            e. Salaries of 51,000 have accrued.
+        </div>
+        <div>
+            f. Interest on the 20% and 24% notes are P20,000 and P8,000, respectively.
+        </div>   
+        </div>                       
+    </div>
+    <button class="custom-button"><a href="whatTodo.html">
+        <h2>Start Here</h2></a>
+    </button>
+    <div class="bot">
+sdad
+    </div>
+</body>
+</html>

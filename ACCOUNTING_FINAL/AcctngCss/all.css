@@ -1,0 +1,142 @@
+html {
+       /*background-image: url(../AcctngImages/MainBG.jpg);*/
+       margin: 0;
+       background-size:cover;
+       background: linear-gradient(to bottom,#29435C,#B2D3BE);
+}
+.wholefirst{
+    width: 80rem;
+    height:40rem;
+    border:1px solid black;
+    margin:40px 0 20px 20px;
+    box-shadow: 0 0 50px rgb(0,0,0,0.5);
+    background-image: url(../AcctngImages/acctngbg1.jpg);
+    background-size:cover;
+}
+
+.arrow {
+    display: flex;
+     align-items: center;
+      padding: 10px;
+     background-color: #3498db; /* Set your desired background color */
+     color: #fff; /* Set your desired text color */
+      border: solid 0.5px rgb(158, 144, 144);
+     border-radius: 5px;
+     cursor: pointer;
+    width:100px;
+    margin-left:5px;
+    margin-top:8px;
+
+         }
+ .arrow:hover{
+  background-color:green;
+  box-shadow: 0 0 10px rgb(0,0,0,0.5);
+ border:solid 1px rgb(59, 49, 2);
+}
+
+
+.arrow-icon {
+margin-left: 5px; 
+}
+a{
+text-decoration: none;
+color:black;
+}
+
+.firstside{
+    border:1px whitesmoke;
+    float:left;
+    height: 25rem;
+    width: 10rem;
+    box-shadow: 0 0 5px rgb(0,0,0,0.2);
+    margin:40px  0  0 150px;
+
+
+}
+.oneb{
+    width:8rem;
+    display:flex;
+    flex-direction: column;
+    margin:20px;
+    color:black;
+
+}
+button{
+    border:1px solid black;
+    box-shadow: 0 0 10px rgb(0,0,0,0.5);
+    margin-bottom:10px;
+    border-radius:5px;
+    color:black
+
+}
+button:hover {
+    border: 2px solid gray;
+    box-shadow: 0 0 15px rgba(19, 18, 18, 0.7);
+    background-color: blanchedalmond;
+  } 
+  .section {
+    border: 1px solid black;
+    margin-top:40px;
+    margin-right:250px;
+    width: 700px;
+    height: 500px;
+    float: right;
+    overflow: hidden; /* Ensure the overflow is hidden to contain the scaled image */
+  }
+
+  .section img {
+    max-width: 100%; /* Set maximum width to 100% of the container */
+    max-height: 100%; /* Set maximum height to 100% of the container */
+    width: auto; /* Allow the width to adjust proportionally to the height */
+    height: auto; /* Allow the height to adjust proportionally to the width */
+    transition: transform 0.3s; /* Add a smooth transition effect */
+  }
+
+  .section:hover img {
+    transform: scale(1.2); /* Scale the image to 120% on hover */
+  }
+  .button-container {
+    display: flex;
+
+  }
+  #people{
+    float:right;
+    height:30px;
+    margin-left:250px;
+    margin-top:20px;
+    border:1px solid #B2533E;
+  }
+
+  .previous,
+  .next {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Adjust the margin between buttons as needed */
+    margin-top:550px;
+    padding:15px;
+  }
+#previous{
+    margin-left:75px;
+    margin-right:350px;
+    background-color:#B5CB99; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+     border: solid 0.5px rgb(158, 144, 144);
+    border-radius: 5px;
+    cursor: pointer;
+    width:150px;
+
+}
+
+
+ .next{
+    background-color: #3498db; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+     border: solid 0.5px rgb(158, 144, 144);
+    border-radius: 5px;
+    cursor: pointer;
+    width:150px;
+ }
+ .next:hover{
+    background-color:#B2533E;
+ }
+

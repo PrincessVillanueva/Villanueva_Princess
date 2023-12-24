@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../AcctngImages/favicon-32x32.png">
+    <title>Document</title>
+    <style>
+       html {
+       /*background-image: url(../AcctngImages/MainBG.jpg);*/
+       margin: 0;
+       background-size:cover;
+       background: linear-gradient(to bottom,#29435C,#B2D3BE);
+}
+
+
+        .whole{
+            border:2px solid black;
+            box-shadow: 0 0 10px rgb(0,0,0,0.5);
+            height:35rem;
+            margin:50px 50px 0 50px;
+            background-image: url(../AcctngImages/acctngbg-modified.jpg);
+        
+            background-size:cover;
+        
+            
+        }
+        .onebox{
+            width:auto;
+            display:flex;
+            flex-direction: column;
+
+        }
+        h2{
+            text-align:center;
+            border:solid #B2D3BE;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            width:600px;
+            margin-left:20rem;
+            margin-top:20px;
+        }
+        button {
+           width: 300px;
+           margin-left: 30rem;
+  margin-bottom: 10px;
+  height: 50px;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background-color 0.10s; /* Move the transition property to the base state */
+}
+button a{
+    text-decoration: none;
+    color:black;
+}
+
+button:hover {
+  border: 2px solid whitesmoke;
+  box-shadow: 0 0 20px rgba(19, 18, 18, 0.7);
+  background-color: burlywood;
+}
+    .arrow {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background-color: #3498db; /* Set your desired background color */
+      color: #fff; /* Set your desired text color */
+      border: solid 0.5px rgb(158, 144, 144);
+      border-radius: 5px;
+      cursor: pointer;
+      width:100px;
+      margin-left:5px;
+      margin-top:8px;
+    }
+ .arrow:hover{
+    background-color:green;
+    box-shadow: 0 0 10px rgb(0,0,0,0.5);
+    border:solid 1px rgb(59, 49, 2);
+    transition: 0.3s;
+ }
+
+    
+    .arrow-icon {
+      margin-left: 5px; 
+    }
+    </style>
+</head>
+<body>
+ <div class="whole">
+    <h2>What to do?</h2>
+     <div class="onebox">
+        <a href="journa.html"><button>Journalizing</button></a>
+        <a href="TAccounts.html"><button>T-Accounts</button></a>
+        <a href="Trial.html"><button>Trial Balance</button></a>
+        <a href="adjusting.html"> <button>Adjusting Entry</button></a>
+        <a href="worksheet.html"><button>Worksheet</button></a>
+       <a href="Income.html"> <button>Income Statement</button></a>
+        <a href="Change.html"><button>Change <br>in Owner's Equity</button></a>
+        <a href="Balance.html"><button>Balance Sheet</button></a>
+    </div>
+ </div>
+ <button class="arrow"> <a href="STARTATTCG.html">
+    Go back</a>
+    <span class="arrow-icon">&#8592;</span>
+  </button>
+</body>
+</html>
